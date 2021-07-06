@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>Kitotkara Popup</TITLE>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+<BODY>
+  <p>Pure javascript responsive Popup</p>
+  <a href="javascript:popupload(1)">sample 1 </a>
+  <a href="javascript:popupload(2)">sample 2 </a>
+  <script type="text/javascript" src="KPU.js"></script>
+  <script>
+    function popupload(flag)
+    {
+      if(flag == 2)
+      {
+        $_kitotPopUp({
+        "width":"400px",
+        "height": "200px",
+        "ID": "TP1",
+        "BG": "light blur",
+        "html": "<div style='padding:20px 10px 10px;'>testing</div>",     
+        "close":"C7 P2",
+        "CSS": "1",
+        });
+      }
+      else
+      {
+        $_kitotPopUp({
+        "width":"300",
+        "height": "100",
+        "ID": "TP2",
+        "BG": "light blur",
+        "html": "testing<br><br><a class='KPUclose' >close</a>",
+        "close":"none",
+        "CSS": "1",
+        });
+      }
+    }
+  </script>
+</BODY> 
+</HTML>
